@@ -5,12 +5,12 @@ export const StarReviewIcon = ({
   props,
   pathProps,
   score,
-  isHovered = true,
+  withOnHoverStyling = true,
 }: {
   props?: SVGProps<SVGSVGElement>;
   pathProps?: React.SVGProps<SVGPathElement>;
   score?: number;
-  isHovered?: boolean;
+  withOnHoverStyling?: boolean;
 }) => {
   return (
     <svg
@@ -30,7 +30,7 @@ export const StarReviewIcon = ({
         strokeLinecap="round"
         strokeLinejoin="round"
         className={cn(
-          isHovered ? "hover:fill-[#004EEB] hover:stroke-[#004EEB]" : "",
+          withOnHoverStyling ? "hover:fill-[#004EEB] hover:stroke-[#004EEB]" : "",
           pathProps?.className || "",
         )}
       />

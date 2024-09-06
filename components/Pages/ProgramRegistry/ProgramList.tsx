@@ -388,7 +388,7 @@ export const ProgramList: FC<ProgramListProps> = ({ grantPrograms, selectProgram
                             fontSize: 7,
                             color: "#FFF",
                           }}
-                          isHovered={false}
+                          withOnHoverStyling={false}
                           score={grant.programScore}
                         />
                       </span>
