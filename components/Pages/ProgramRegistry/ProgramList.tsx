@@ -384,7 +384,7 @@ export const ProgramList: FC<ProgramListProps> = ({ grantPrograms, selectProgram
                         <StarReviewIcon
                           props={{
                             className:
-                              "text-[#004EEB] w-14 h-14 transparent hover:fill-transparent hover:stroke-transparent",
+                              "text-strongblue w-14 h-14 transparent hover:fill-transparent hover:stroke-transparent",
                             fontSize: 7,
                             color: "#FFF",
                           }}
