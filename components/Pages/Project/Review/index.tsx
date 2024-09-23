@@ -98,7 +98,7 @@ export const ReviewSection = ({ grant }: GrantAllReviewsProps) => {
                     </h2>
                     {isConnected &&
                     project?.recipient &&
-                    address /**This conditional enables every user review  */ ? (
+                    address /** This conditional enables any user to review grant projects  */ ? (
                       <Button
                         disabled={false}
                         onClick={handleReviewButton}
