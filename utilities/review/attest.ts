@@ -97,6 +97,8 @@ export async function submitAttest(
   });
 
   console.log("EncodedData:", encodedData);
+  console.log("walletClient.chain?.id", walletClient.chain?.id);
+  console.log("arbitrum.id", arbitrum.id);
 
   if (walletClient.chain?.id !== arbitrum.id) {
     walletClient.switchChain({ id: arbitrum.id });
